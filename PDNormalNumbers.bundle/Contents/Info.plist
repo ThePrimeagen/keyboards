@@ -20,7 +20,7 @@
 		<key>TISInputSourceID</key>
 		<string>org.sil.ukelele.keyboardlayout.pdnormalnumbers.realprogrammers dvorak</string>
 		<key>TISIntendedLanguage</key>
-		<string></string>
+		<string>en-Latn</string>
 	</dict>
 </dict>
 </plist>
