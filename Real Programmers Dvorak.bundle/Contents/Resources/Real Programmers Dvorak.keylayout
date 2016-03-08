@@ -1,0 +1,2399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE keyboard PUBLIC "" "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
+<!--Created by Ukelele version 2.2.8 on 2015-01-18 at 08:37 (PST)-->
+<!--Last edited by Ukelele version 2.2.8 on 2016-03-08 at 10:59 (PST)-->
+<keyboard group="0" id="1453" name="Real Programmers Dvorak" maxout="1">
+    <layouts>
+        <!-- http://developer.apple.com/library/mac/documentation/Carbon/Reference/Gestalt_Manager/Reference/reference.html#//apple_ref/doc/uid/TP30000036-CH4g-KeyboardSelectors -->
+        <!-- identifiers in Gestalt.h has been used to determine the type of
+	     the keyboard. the table given as example in TN2056 is different,
+	     but on the other hand, that technote also claimed that ANSI
+	     layouts could serve ISO keyboards
+	-->
+        <!-- TN1152 lists a different set of mapping from device-ID to type -->
+        <layout first="0" last="6" modifiers="modifiers" mapSet="ANSI"/>
+        <layout first="7" last="9" modifiers="modifiers" mapSet="ISO"/>
+        <layout first="10" last="10" modifiers="modifiers" mapSet="ANSI"/>
+        <layout first="11" last="11" modifiers="modifiers" mapSet="ISO"/>
+        <layout first="12" last="12" modifiers="modifiers" mapSet="ANSI"/>
+        <layout first="13" last="13" modifiers="modifiers" mapSet="ISO"/>
+        <layout first="14" last="15" modifiers="modifiers" mapSet="ANSI"/>
+        <layout first="16" last="16" modifiers="modifiers" mapSet="ISO"/>
+        <layout first="17" last="17" modifiers="modifiers" mapSet="JIS"/>
+        <layout first="18" last="19" modifiers="modifiers" mapSet="ANSI"/>
+        <layout first="20" last="20" modifiers="modifiers" mapSet="ISO"/>
+        <layout first="21" last="21" modifiers="modifiers" mapSet="JIS"/>
+        <layout first="22" last="28" modifiers="modifiers" mapSet="ANSI"/>
+        <layout first="29" last="29" modifiers="modifiers" mapSet="ISO"/>
+        <layout first="30" last="30" modifiers="modifiers" mapSet="JIS"/>
+        <layout first="31" last="31" modifiers="modifiers" mapSet="ANSI"/>
+        <layout first="32" last="32" modifiers="modifiers" mapSet="ISO"/>
+        <layout first="33" last="33" modifiers="modifiers" mapSet="JIS"/>
+        <layout first="34" last="34" modifiers="modifiers" mapSet="ANSI"/>
+        <layout first="35" last="35" modifiers="modifiers" mapSet="ISO"/>
+        <layout first="36" last="36" modifiers="modifiers" mapSet="JIS"/>
+        <layout first="37" last="37" modifiers="modifiers" mapSet="ANSI"/>
+        <layout first="38" last="38" modifiers="modifiers" mapSet="ISO"/>
+        <layout first="39" last="39" modifiers="modifiers" mapSet="JIS"/>
+        <layout first="40" last="40" modifiers="modifiers" mapSet="ANSI"/>
+        <layout first="41" last="41" modifiers="modifiers" mapSet="ISO"/>
+        <layout first="42" last="42" modifiers="modifiers" mapSet="JIS"/>
+        <layout first="43" last="44" modifiers="modifiers" mapSet="ISO"/>
+        <layout first="194" last="194" modifiers="modifiers" mapSet="JIS"/>
+        <layout first="195" last="195" modifiers="modifiers" mapSet="ANSI"/>
+        <layout first="196" last="196" modifiers="modifiers" mapSet="ISO"/>
+        <layout first="197" last="197" modifiers="modifiers" mapSet="JIS"/>
+        <layout first="198" last="198" modifiers="modifiers" mapSet="ANSI"/>
+        <layout first="199" last="199" modifiers="modifiers" mapSet="ISO"/>
+        <layout first="200" last="201" modifiers="modifiers" mapSet="JIS"/>
+        <layout first="202" last="202" modifiers="modifiers" mapSet="ANSI"/>
+        <layout first="203" last="203" modifiers="modifiers" mapSet="ISO"/>
+        <layout first="204" last="204" modifiers="modifiers" mapSet="ANSI"/>
+        <layout first="205" last="205" modifiers="modifiers" mapSet="ISO"/>
+        <layout first="206" last="207" modifiers="modifiers" mapSet="JIS"/>
+    </layouts>
+    <modifierMap id="modifiers" defaultIndex="0">
+        <!-- no modifiers -->
+        <keyMapSelect mapIndex="0">
+            <!-- shift -->
+            <modifier keys=""/>
+            <modifier keys="anyShift? caps? command"/>
+        </keyMapSelect>
+        <keyMapSelect mapIndex="1">
+            <modifier keys="anyShift"/>
+        </keyMapSelect>
+        <keyMapSelect mapIndex="2">
+            <modifier keys="caps"/>
+        </keyMapSelect>
+        <keyMapSelect mapIndex="3">
+            <!-- option -->
+            <modifier keys="anyShift caps"/>
+        </keyMapSelect>
+        <keyMapSelect mapIndex="4">
+            <!-- option + shift -->
+            <modifier keys="anyOption"/>
+            <modifier keys="anyShift caps anyOption"/>
+            <modifier keys="anyShift? caps? anyOption command"/>
+        </keyMapSelect>
+        <keyMapSelect mapIndex="5">
+            <modifier keys="anyShift anyOption"/>
+        </keyMapSelect>
+        <keyMapSelect mapIndex="6">
+            <!-- control + anything but command -->
+            <modifier keys="caps anyOption"/>
+        </keyMapSelect>
+        <keyMapSelect mapIndex="7">
+            <modifier keys="anyShift? caps? anyOption? anyControl"/>
+        </keyMapSelect>
+    </modifierMap>
+    <keyMapSet id="ANSI">
+        <!-- keycodes can be found in HIToolbox/Events.h (prefixed kVK_ANSI_) -->
+        <!-- and http://lists.apple.com/archives/carbon-dev/2009/Jan/msg00101.html -->
+        <!-- difference between ANSI and ISO layout is the extra key which
+       is mapped to Compose in Programmer Dvorak (the physical layout
+       also varies, but that is irrelevant to the symbol driver)
+  -->
+        <keyMap index="0">
+            <!-- number row -->
+            <!-- starred items are those that are different from Normal state -->
+            <key code="0" action="a"/>
+            <!-- left pinky 	-->
+            <key code="1" action="o"/>
+            <!-- left ring 		-->
+            <key code="2" action="e"/>
+            <!-- left middle 	-->
+            <key code="3" action="u"/>
+            <!-- left index 1 	-->
+            <key code="4" action="d"/>
+            <!-- right index 2 	-->
+            <key code="5" action="i"/>
+            <!-- left index 2 	-->
+            <key code="6" action="apostrophe"/>
+            <!-- left pinky 	-->
+            <key code="7" output="q"/>
+            <!-- left ring 		-->
+            <key code="8" action="j"/>
+            <!-- left middle 	-->
+            <key code="9" action="k"/>
+            <!-- left index 1 	-->
+            <key code="10" action="compose"/>
+            <key code="11" output="x"/>
+            <!-- left index 2 	-->
+            <key code="12" action="semi"/>
+            <!-- left pinky 	-->
+            <key code="13" action="comma"/>
+            <!-- left ring 		-->
+            <key code="14" action="period"/>
+            <!-- left middle 	-->
+            <key code="15" output="p"/>
+            <!-- left index 1 	-->
+            <key code="16" output="f"/>
+            <!-- right index 2 	-->
+            <key code="17" action="y"/>
+            <!-- left index 2 	-->
+            <key code="18" output="+"/>
+            <!-- left pinky 2 	-->
+            <key code="19" output="["/>
+            <!-- left pinky 1 	-->
+            <key code="20" output="{"/>
+            <!-- left ring 		-->
+            <key code="21" output="("/>
+            <!-- left middle 	-->
+            <key code="22" output="="/>
+            <!-- left index 2 	-->
+            <key code="23" action="lparen"/>
+            <!-- left index 1 	-->
+            <key code="24" output="|"/>
+            <!-- right pinky 2 	-->
+            <key code="25" output="]"/>
+            <!-- right middle 	-->
+            <key code="26" action="asterisk"/>
+            <!-- right index 2 	-->
+            <key code="27" output="!"/>
+            <!-- right pinky 1 	-->
+            <key code="28" output="}"/>
+            <!-- right index 1 	-->
+            <key code="29" output="*"/>
+            <!-- right ring 	-->
+            <key code="30" action="at"/>
+            <!-- right pinky 3 	-->
+            <!-- home row -->
+            <!--key code="57"  output=""/>		<! Caps Lock 		-->
+            <key code="31" action="r"/>
+            <!-- right ring 	-->
+            <key code="32" action="g"/>
+            <!-- right index 1 	-->
+            <key code="33" action="slash"/>
+            <!-- right pinky 2 	-->
+            <key code="34" action="c"/>
+            <!-- right middle 	-->
+            <key code="35" action="l"/>
+            <!-- right pinky 1 	-->
+            <key code="36" output="&#x000D;"/>
+            <!-- Return 		-->
+            <!-- bottom row -->
+            <!--key code="56"  output=""/>		<! Left Shift 		-->
+            <!-- even though this key is not here on actual ANSI keyboards
+	       we add a binding here for keyboards which physically have
+	       ISO layout but are mis-classified (VMware Fusion)
+	  -->
+            <key code="37" action="n"/>
+            <!-- right ring 	-->
+            <key code="38" action="h"/>
+            <!-- right index 1 	-->
+            <key code="39" output="-"/>
+            <!-- right pinky 2 	-->
+            <key code="40" action="t"/>
+            <!-- right middle 	-->
+            <key code="41" action="s"/>
+            <!-- right pinky 1 	-->
+            <key code="42" output="\"/>
+            <!-- right pinky 3 	-->
+            <key code="43" output="w"/>
+            <!-- right middle 	-->
+            <key code="44" action="z"/>
+            <!-- right pinky 	-->
+            <!--key code="60"  output=""/>		<! Right Shift 		-->
+            <!-- numpad -->
+            <key code="45" output="b"/>
+            <!-- right index 2 	-->
+            <key code="46" action="m"/>
+            <!-- right index 1 	-->
+            <key code="47" output="v"/>
+            <!-- right ring 	-->
+            <key code="48" output="&#x0009;"/>
+            <!-- Tab 			-->
+            <key code="49" action="space"/>
+            <!-- Spacebar 		-->
+            <!--key code="54"  output=""/>		<! Right Command 	-->
+            <!--key code="61"  output=""/>		<! Right Option 	-->
+            <!--key code="110" output=""/>		<! Contextual Menu 	-->
+            <!--key code="62"  output=""/>		<! Right Control 	-->
+            <!-- function row -->
+            <key code="50" output="$"/>
+            <!-- left pinky 3	-->
+            <key code="51" output="&#x0008;"/>
+            <!-- Backspace 		-->
+            <!-- top row -->
+            <key code="53" output="&#x001B;"/>
+            <!-- Esc 			-->
+            <key code="64" output="&#x0010;"/>
+            <key code="65" output="."/>
+            <!-- Decimal Sep.	-->
+            <!-- modifiers -->
+            <!--key code="59"  output=""/>		<! Left Control 	-->
+            <!--key code="58"  output=""/>		<! Left Option 		-->
+            <!--key code="55"  output=""/>		<! Left Command 	-->
+            <key code="66" output="&#x001D;"/>
+            <key code="67" output="-"/>
+            <!-- Num * 			-->
+            <key code="69" output="+"/>
+            <!-- Num + 			-->
+            <key code="70" output="&#x001C;"/>
+            <key code="71" output="&#x001B;"/>
+            <!-- Num Lock 		-->
+            <key code="72" output="&#x001F;"/>
+            <key code="75" output="*"/>
+            <!-- Num / 			-->
+            <key code="76" output="&#x0003;"/>
+            <!-- Enter 			-->
+            <key code="77" output="&#x001E;"/>
+            <key code="78" output="+"/>
+            <!-- Num - 			-->
+            <key code="79" output="&#x0010;"/>
+            <key code="80" output="&#x0010;"/>
+            <key code="81" output="/"/>
+            <!-- Num = 			-->
+            <key code="82" output="0"/>
+            <!-- Num 0 			-->
+            <key code="83" output="7"/>
+            <!-- Num 1 			-->
+            <key code="84" output="8"/>
+            <!-- Num 2 			-->
+            <key code="85" output="9"/>
+            <!-- Num 3 			-->
+            <key code="86" output="4"/>
+            <!-- Num 4 			-->
+            <key code="87" output="5"/>
+            <!-- Num 5 			-->
+            <key code="88" output="6"/>
+            <!-- Num 6 			-->
+            <key code="89" output="1"/>
+            <!-- Num 7 			-->
+            <key code="91" output="2"/>
+            <!-- Num 8 			-->
+            <key code="92" output="3"/>
+            <!-- Num 9 			-->
+            <key code="96" output="&#x0010;"/>
+            <!-- F5 			-->
+            <key code="97" output="&#x0010;"/>
+            <!-- F6 			-->
+            <key code="98" output="&#x0010;"/>
+            <!-- F7 			-->
+            <key code="99" output="&#x0010;"/>
+            <!-- F3 			-->
+            <key code="100" output="&#x0010;"/>
+            <!-- F8 			-->
+            <key code="101" output="&#x0010;"/>
+            <!-- F9 			-->
+            <key code="103" output="&#x0010;"/>
+            <!-- F11 			-->
+            <key code="105" output="&#x0010;"/>
+            <!-- PrtScn 		-->
+            <key code="106" output="&#x0010;"/>
+            <key code="107" output="&#x0010;"/>
+            <!-- ScrLk 			-->
+            <key code="109" output="&#x0010;"/>
+            <!-- F10 			-->
+            <key code="111" output="&#x0010;"/>
+            <!-- F12 			-->
+            <key code="113" output="&#x0010;"/>
+            <!-- Pause 			-->
+            <!-- navigation and control keys -->
+            <key code="114" output="&#x0005;"/>
+            <!-- Ins 			-->
+            <key code="115" output="&#x0001;"/>
+            <!-- Home 			-->
+            <key code="116" output="&#x000B;"/>
+            <!-- PgUp 			-->
+            <key code="117" output="&#x007F;"/>
+            <!-- Del 			-->
+            <key code="118" output="&#x0010;"/>
+            <!-- F4 			-->
+            <key code="119" output="&#x0004;"/>
+            <!-- End 			-->
+            <key code="120" output="&#x0010;"/>
+            <!-- F2 			-->
+            <key code="121" output="&#x000C;"/>
+            <!-- PgDn 			-->
+            <!-- arrow keys -->
+            <key code="122" output="&#x0010;"/>
+            <!-- F1 			-->
+            <key code="123" output="&#x001C;"/>
+            <!-- Left 			-->
+            <key code="124" output="&#x001D;"/>
+            <!-- Right 			-->
+            <key code="125" output="&#x001F;"/>
+            <!-- Down 			-->
+            <key code="126" output="&#x001E;"/>
+            <!-- Up 			-->
+        </keyMap>
+        <keyMap index="1">
+            <!-- number row -->
+            <!-- keys that are not affected by Caps Lock are marked with + -->
+            <key code="0" action="A"/>
+            <!-- left pinky 	-->
+            <key code="1" action="O"/>
+            <!-- left ring 		-->
+            <key code="2" action="E"/>
+            <!-- left middle 	-->
+            <key code="3" action="U"/>
+            <!-- left index 1 	-->
+            <key code="4" action="D"/>
+            <!-- right index 2 	-->
+            <key code="5" action="I"/>
+            <!-- left index 2 	-->
+            <key code="6" action="quote"/>
+            <!-- left pinky 	-->
+            <key code="7" output="Q"/>
+            <!-- left ring 		-->
+            <key code="8" action="J"/>
+            <!-- left middle 	-->
+            <key code="9" action="K"/>
+            <!-- left index 1 	-->
+            <key code="10" action="compose"/>
+            <key code="11" output="X"/>
+            <!-- left index 2 	-->
+            <key code="12" action="colon"/>
+            <!-- left pinky 	-->
+            <key code="13" action="less"/>
+            <!-- left ring 		-->
+            <key code="14" action="greater"/>
+            <!-- left middle 	-->
+            <key code="15" output="P"/>
+            <!-- left index 1 	-->
+            <key code="16" output="F"/>
+            <!-- right index 2 	-->
+            <key code="17" output="Y"/>
+            <!-- left index 2 	-->
+            <key code="18" output="1"/>
+            <!-- left pinky 2 	-->
+            <key code="19" output="2"/>
+            <!-- left pinky 1 	-->
+            <key code="20" output="3"/>
+            <!-- left ring 		-->
+            <key code="21" output="4"/>
+            <!-- left middle 	-->
+            <key code="22" output="6"/>
+            <!-- left index 2 	-->
+            <key code="23" output="5"/>
+            <!-- left index 1	-->
+            <key code="24" action="backquote"/>
+            <!-- right pinky 2 	-->
+            <key code="25" output="9"/>
+            <!-- right middle 	-->
+            <key code="26" action="zero"/>
+            <!-- right index 2 	-->
+            <key code="27" output="%"/>
+            <!-- right pinky 1 	-->
+            <key code="28" output="8"/>
+            <!-- right index 1 	-->
+            <key code="29" output="0"/>
+            <!-- right ring 	-->
+            <key code="30" action="caret"/>
+            <!-- right pinky 3 	-->
+            <!-- home row -->
+            <!--key code="57"  output=""/>		<! Caps Lock 		-->
+            <!--*-->
+            <key code="31" action="R"/>
+            <!-- right ring 	-->
+            <key code="32" action="G"/>
+            <!-- right index 1 	-->
+            <key code="33" output="?"/>
+            <!-- right pinky 2 	-->
+            <key code="34" action="C"/>
+            <!-- right middle 	-->
+            <key code="35" action="L"/>
+            <!-- right pinky 1 	-->
+            <key code="36" output="&#x000D;"/>
+            <!-- Return 		-->
+            <!--*-->
+            <!-- bottom row -->
+            <!--key code="56"  output=""/>		<! Left Shift 		-->
+            <!--*-->
+            <!-- compose action is not affected by Shift; allows us to
+	       prematurely press the modifier before hitting the next
+	       key without altering the outcome
+	  -->
+            <key code="37" action="N"/>
+            <!-- right ring 	-->
+            <key code="38" action="H"/>
+            <!-- right index 1 	-->
+            <key code="39" output="_"/>
+            <!-- right pinky 2 	-->
+            <key code="40" action="T"/>
+            <!-- right middle 	-->
+            <key code="41" action="S"/>
+            <!-- right pinky 1 	-->
+            <key code="42" output="#"/>
+            <!-- right pinky 3 	-->
+            <key code="43" output="W"/>
+            <!-- right middle 	-->
+            <key code="44" action="Z"/>
+            <!-- right pinky 	-->
+            <!--key code="60"  output=""/>		<! Right Shift 		-->
+            <!--*-->
+            <!-- numpad -->
+            <key code="45" output="B"/>
+            <!-- right index 2 	-->
+            <key code="46" action="M"/>
+            <!-- right index 1 	-->
+            <key code="47" output="V"/>
+            <!-- right ring 	-->
+            <key code="48" output="&#x0009;"/>
+            <!-- Tab 			-->
+            <!--*-->
+            <key code="49" action="space"/>
+            <!-- Spacebar 		-->
+            <!--key code="54"  output=""/>		<! Right Command 	-->
+            <!--key code="61"  output=""/>		<! Right Option 	-->
+            <!--key code="110" output=""/>		<! Contextual Menu 	-->
+            <!--key code="62"  output=""/>		<! Right Control 	-->
+            <!-- function row -->
+            <!--*-->
+            <key code="50" action="tilde"/>
+            <!-- left pinky 3 	-->
+            <key code="51" output="&#x0008;"/>
+            <!-- Backspace 		-->
+            <!--*-->
+            <!-- top row -->
+            <key code="53" output="&#x001B;"/>
+            <!-- Esc 			-->
+            <key code="64" output="&#x0010;"/>
+            <key code="65" output=";"/>
+            <!-- Decimal Sep. 	-->
+            <!-- modifiers -->
+            <!--*-->
+            <!--key code="59"  output=""/>		<! Left Control 	-->
+            <!--key code="58"  output=""/>		<! Left Option 		-->
+            <!--key code="55"  output=""/>		<! Left Command 	-->
+            <key code="66" output="&#x001D;"/>
+            <key code="67" output="$"/>
+            <!-- Num * 			-->
+            <key code="69" output=","/>
+            <!-- Num + 			-->
+            <key code="70" output="&#x001C;"/>
+            <key code="71" output="&#x001B;"/>
+            <!-- Num Lock 		-->
+            <!--*-->
+            <key code="72" output="&#x001F;"/>
+            <key code="75" output=")"/>
+            <!-- Num / 			-->
+            <key code="76" output="&#x0003;"/>
+            <!-- Enter 			-->
+            <!--*-->
+            <key code="77" output="&#x001E;"/>
+            <key code="78" output=","/>
+            <!-- Num - 			-->
+            <key code="79" output="&#x0010;"/>
+            <key code="80" output="&#x0010;"/>
+            <key code="81" output="("/>
+            <!-- Num = 			-->
+            <key code="82" output="\"/>
+            <!-- Num 0 			-->
+            <key code="83" output="="/>
+            <!-- Num 1 			-->
+            <key code="84" output="x"/>
+            <!-- Num 2 			-->
+            <key code="85" output=":"/>
+            <!-- Num 3 			-->
+            <key code="86" output="D"/>
+            <!-- Num 4 			-->
+            <key code="87" output="E"/>
+            <!-- Num 5 			-->
+            <key code="88" output="F"/>
+            <!-- Num 6 			-->
+            <key code="89" output="A"/>
+            <!-- Num 7 			-->
+            <key code="91" output="B"/>
+            <!-- Num 8 			-->
+            <key code="92" output="C"/>
+            <!-- Num 9 			-->
+            <key code="96" output="&#x0010;"/>
+            <!-- F5 			-->
+            <key code="97" output="&#x0010;"/>
+            <!-- F6 			-->
+            <key code="98" output="&#x0010;"/>
+            <!-- F7 			-->
+            <key code="99" output="&#x0010;"/>
+            <!-- F3 			-->
+            <key code="100" output="&#x0010;"/>
+            <!-- F8 			-->
+            <key code="101" output="&#x0010;"/>
+            <!-- F9 			-->
+            <key code="103" output="&#x0010;"/>
+            <!-- F11 			-->
+            <key code="105" output="&#x0010;"/>
+            <!-- PrtScn 		-->
+            <key code="106" output="&#x0010;"/>
+            <key code="107" output="&#x0010;"/>
+            <!-- ScrLk 			-->
+            <key code="109" output="&#x0010;"/>
+            <!-- F10 			-->
+            <key code="111" output="&#x0010;"/>
+            <!-- F12 			-->
+            <key code="113" output="&#x0010;"/>
+            <!-- Pause 			-->
+            <!-- navigation and control keys -->
+            <!--*-->
+            <key code="114" output="&#x0005;"/>
+            <!-- Ins 			-->
+            <key code="115" output="&#x0001;"/>
+            <!-- Home 			-->
+            <key code="116" output="&#x000B;"/>
+            <!-- PgUp 			-->
+            <key code="117" output="&#x007F;"/>
+            <!-- Del 			-->
+            <key code="118" output="&#x0010;"/>
+            <!-- F4 			-->
+            <key code="119" output="&#x0004;"/>
+            <!-- End 			-->
+            <key code="120" output="&#x0010;"/>
+            <!-- F2 			-->
+            <key code="121" output="&#x000C;"/>
+            <!-- PgDn 			-->
+            <!-- arrow keys -->
+            <!--*-->
+            <key code="122" output="&#x0010;"/>
+            <!-- F1 			-->
+            <key code="123" output="&#x001C;"/>
+            <!-- Left 			-->
+            <key code="124" output="&#x001D;"/>
+            <!-- Right 			-->
+            <key code="125" output="&#x001F;"/>
+            <!-- Down 			-->
+            <key code="126" output="&#x001E;"/>
+            <!-- Up 			-->
+        </keyMap>
+        <keyMap index="2">
+            <!-- number row -->
+            <!-- those keys that are unaffected by Caps Lock (marked with at) should
+	     behave as in the regular shift map; the others are cancelled by the
+	     Shift modifier. thus, this map is a copy of the normal map, with
+	     those keys marked as unaffected in the caps map replaced with the
+	     value from the shift map -->
+            <key code="0" action="A"/>
+            <!-- left pinky 	-->
+            <key code="1" action="O"/>
+            <!-- left ring 		-->
+            <key code="2" action="E"/>
+            <!-- left middle 	-->
+            <key code="3" action="U"/>
+            <!-- left index 1 	-->
+            <key code="4" action="D"/>
+            <!-- right index 2 	-->
+            <key code="5" action="I"/>
+            <!-- left index 2 	-->
+            <key code="6" action="apostrophe"/>
+            <!-- left pinky 	-->
+            <!--+-->
+            <key code="7" output="Q"/>
+            <!-- left ring 		-->
+            <key code="8" action="J"/>
+            <!-- left middle 	-->
+            <key code="9" action="K"/>
+            <!-- left index 1 	-->
+            <key code="10" action="compose"/>
+            <key code="11" output="X"/>
+            <!-- left index 2 	-->
+            <key code="12" action="semi"/>
+            <!-- left pinky 	-->
+            <!--+-->
+            <key code="13" action="comma"/>
+            <!-- left ring 		-->
+            <!--+-->
+            <key code="14" action="period"/>
+            <!-- left middle 	-->
+            <!--+-->
+            <key code="15" output="P"/>
+            <!-- left index 1 	-->
+            <key code="16" output="F"/>
+            <!-- right index 2 	-->
+            <key code="17" output="Y"/>
+            <!-- left index 2 	-->
+            <key code="18" output="1"/>
+            <!-- left pinky 2 	-->
+            <!--+-->
+            <key code="19" output="2"/>
+            <!-- left pinky 1 	-->
+            <key code="20" output="3"/>
+            <!-- left ring 		-->
+            <key code="21" output="4"/>
+            <!-- left middle 	-->
+            <key code="22" output="6"/>
+            <!-- left index 2 	-->
+            <key code="23" output="5"/>
+            <!-- left index 1	-->
+            <key code="24" output="`"/>
+            <!-- right pinky 2 	-->
+            <!--+-->
+            <key code="25" output="9"/>
+            <!-- right middle 	-->
+            <key code="26" action="zero"/>
+            <!-- right index 2 	-->
+            <key code="27" output="%"/>
+            <!-- right pinky 1 	-->
+            <key code="28" output="8"/>
+            <!-- right index 1 	-->
+            <key code="29" output="0"/>
+            <!-- right ring 	-->
+            <key code="30" action="at"/>
+            <!-- right pinky 3 	-->
+            <!--+-->
+            <!-- home row -->
+            <!--key code="57"  output=""/>		<! Caps Lock 		-->
+            <key code="31" action="R"/>
+            <!-- right ring 	-->
+            <key code="32" action="G"/>
+            <!-- right index 1 	-->
+            <key code="33" action="slash"/>
+            <!-- right pinky 2 	-->
+            <!--+-->
+            <key code="34" action="C"/>
+            <!-- right middle 	-->
+            <key code="35" action="L"/>
+            <!-- right pinky 1 	-->
+            <key code="36" output="&#x000D;"/>
+            <!-- Return 		-->
+            <!-- bottom row -->
+            <!--key code="56"  output=""/>		<! Left Shift 		-->
+            <key code="37" action="N"/>
+            <!-- right ring 	-->
+            <key code="38" action="H"/>
+            <!-- right index 1 	-->
+            <key code="39" output="_"/>
+            <!-- right pinky 2 	-->
+            <key code="40" action="T"/>
+            <!-- right middle 	-->
+            <key code="41" action="S"/>
+            <!-- right pinky 1 	-->
+            <key code="42" output="\"/>
+            <!-- right pinky 3 	-->
+            <!--+-->
+            <key code="43" output="W"/>
+            <!-- right middle 	-->
+            <key code="44" action="Z"/>
+            <!-- right pinky 	-->
+            <!--key code="60"  output=""/>		<! Right Shift 		-->
+            <!-- numpad -->
+            <!--+-->
+            <key code="45" output="B"/>
+            <!-- right index 2 	-->
+            <key code="46" action="M"/>
+            <!-- right index 1 	-->
+            <key code="47" output="V"/>
+            <!-- right ring 	-->
+            <key code="48" output="&#x0009;"/>
+            <!-- Tab 			-->
+            <key code="49" action="space"/>
+            <!-- Spacebar 		-->
+            <!--key code="54"  output=""/>		<! Right Command 	-->
+            <!--key code="61"  output=""/>		<! Right Option 	-->
+            <!--key code="110" output=""/>		<! Contextual Menu 	-->
+            <!--key code="62"  output=""/>		<! Right Control 	-->
+            <!-- function row -->
+            <key code="50" output="$"/>
+            <!-- left pinky 3 	-->
+            <!--+-->
+            <key code="51" output="&#x0008;"/>
+            <!-- Backspace 		-->
+            <!-- top row -->
+            <key code="53" output="&#x001B;"/>
+            <!-- Esc 			-->
+            <key code="64" output="&#x0010;"/>
+            <key code="65" output="."/>
+            <!-- Decimal Sep.	-->
+            <!-- modifiers -->
+            <!--key code="59"  output=""/>		<! Left Control 	-->
+            <!--key code="58"  output=""/>		<! Left Option 		-->
+            <!--key code="55"  output=""/>		<! Left Command 	-->
+            <key code="66" output="&#x001D;"/>
+            <key code="67" output="-"/>
+            <!-- Num * 			-->
+            <key code="69" output="+"/>
+            <!-- Num + 			-->
+            <key code="70" output="&#x001C;"/>
+            <key code="71" output="&#x001B;"/>
+            <!-- Num Lock 		-->
+            <key code="72" output="&#x001F;"/>
+            <key code="75" output="*"/>
+            <!-- Num / 			-->
+            <key code="76" output="&#x0003;"/>
+            <!-- Enter 			-->
+            <key code="77" output="&#x001E;"/>
+            <key code="78" output="+"/>
+            <!-- Num - 			-->
+            <key code="79" output="&#x0010;"/>
+            <key code="80" output="&#x0010;"/>
+            <key code="81" output="/"/>
+            <!-- Num = 			-->
+            <key code="82" output="0"/>
+            <!-- Num 0 			-->
+            <key code="83" output="7"/>
+            <!-- Num 1 			-->
+            <key code="84" output="8"/>
+            <!-- Num 2 			-->
+            <key code="85" output="9"/>
+            <!-- Num 3 			-->
+            <key code="86" output="4"/>
+            <!-- Num 4 			-->
+            <key code="87" output="5"/>
+            <!-- Num 5 			-->
+            <key code="88" output="6"/>
+            <!-- Num 6 			-->
+            <key code="89" output="1"/>
+            <!-- Num 7 			-->
+            <key code="91" output="2"/>
+            <!-- Num 8 			-->
+            <key code="92" output="3"/>
+            <!-- Num 9 			-->
+            <key code="96" output="&#x0010;"/>
+            <!-- F5 			-->
+            <key code="97" output="&#x0010;"/>
+            <!-- F6 			-->
+            <key code="98" output="&#x0010;"/>
+            <!-- F7 			-->
+            <key code="99" output="&#x0010;"/>
+            <!-- F3 			-->
+            <key code="100" output="&#x0010;"/>
+            <!-- F8 			-->
+            <key code="101" output="&#x0010;"/>
+            <!-- F9 			-->
+            <key code="103" output="&#x0010;"/>
+            <!-- F11 			-->
+            <key code="105" output="&#x0010;"/>
+            <!-- PrtScn 		-->
+            <key code="106" output="&#x0010;"/>
+            <key code="107" output="&#x0010;"/>
+            <!-- ScrLk 			-->
+            <key code="109" output="&#x0010;"/>
+            <!-- F10 			-->
+            <key code="111" output="&#x0010;"/>
+            <!-- F12 			-->
+            <key code="113" output="&#x0010;"/>
+            <!-- Pause 			-->
+            <!-- navigation and control keys -->
+            <key code="114" output="&#x0005;"/>
+            <!-- Ins 			-->
+            <key code="115" output="&#x0001;"/>
+            <!-- Home 			-->
+            <key code="116" output="&#x000B;"/>
+            <!-- PgUp 			-->
+            <key code="117" output="&#x007F;"/>
+            <!-- Del 			-->
+            <key code="118" output="&#x0010;"/>
+            <!-- F4 			-->
+            <key code="119" output="&#x0004;"/>
+            <!-- End 			-->
+            <key code="120" output="&#x0010;"/>
+            <!-- F2 			-->
+            <key code="121" output="&#x000C;"/>
+            <!-- PgDn 			-->
+            <!-- arrow keys -->
+            <key code="122" output="&#x0010;"/>
+            <!-- F1 			-->
+            <key code="123" output="&#x001C;"/>
+            <!-- Left 			-->
+            <key code="124" output="&#x001D;"/>
+            <!-- Right 			-->
+            <key code="125" output="&#x001F;"/>
+            <!-- Down 			-->
+            <key code="126" output="&#x001E;"/>
+            <!-- Up 			-->
+        </keyMap>
+        <keyMap index="3">
+            <!-- number row -->
+            <!-- option, a.k.a. Alt Graph. starred entries indicate that they
+	     effectively unassigned and return the value of the normal map -->
+            <key code="0" action="a"/>
+            <!-- left pinky 	-->
+            <key code="1" action="o"/>
+            <!-- left ring 		-->
+            <key code="2" action="e"/>
+            <!-- left middle 	-->
+            <key code="3" action="u"/>
+            <!-- left index 1 	-->
+            <key code="4" action="d"/>
+            <!-- right index 2 	-->
+            <key code="5" action="i"/>
+            <!-- left index 2 	-->
+            <key code="6" action="quote"/>
+            <!-- left pinky 	-->
+            <!--@-->
+            <key code="7" output="q"/>
+            <!-- left ring 		-->
+            <key code="8" action="j"/>
+            <!-- left middle 	-->
+            <key code="9" action="k"/>
+            <!-- left index 1 	-->
+            <key code="10" action="compose"/>
+            <key code="11" output="x"/>
+            <!-- left index 2 	-->
+            <key code="12" action="colon"/>
+            <!-- left pinky 	-->
+            <!--@-->
+            <key code="13" action="less"/>
+            <!-- left ring 		-->
+            <!--@-->
+            <key code="14" action="greater"/>
+            <!-- left middle 	-->
+            <!--@-->
+            <key code="15" output="p"/>
+            <!-- left index 1 	-->
+            <key code="16" output="f"/>
+            <!-- right index 2 	-->
+            <key code="17" action="y"/>
+            <!-- left index 2 	-->
+            <key code="18" output="%"/>
+            <!-- left pinky 2 	-->
+            <!--@-->
+            <key code="19" output="["/>
+            <!-- left pinky 1 	-->
+            <key code="20" output="{"/>
+            <!-- left ring 		-->
+            <key code="21" output="}"/>
+            <!-- left middle 	-->
+            <key code="22" output="="/>
+            <!-- left index 2 	-->
+            <key code="23" action="lparen"/>
+            <!-- left index 1 	-->
+            <key code="24" action="backquote"/>
+            <!-- right pinky 2 	-->
+            <!--@-->
+            <key code="25" output="+"/>
+            <!-- right middle 	-->
+            <key code="26" action="asterisk"/>
+            <!-- right index 2 	-->
+            <key code="27" output="!"/>
+            <!-- right pinky 1 	-->
+            <key code="28" output=")"/>
+            <!-- right index 1 	-->
+            <key code="29" output="]"/>
+            <!-- right ring 	-->
+            <key code="30" action="caret"/>
+            <!-- right pinky 3 	-->
+            <!--@-->
+            <!-- home row -->
+            <!--key code="57"  output=""/>		<! Caps Lock 		-->
+            <key code="31" action="r"/>
+            <!-- right ring 	-->
+            <key code="32" action="g"/>
+            <!-- right index 1 	-->
+            <key code="33" output="?"/>
+            <!-- right pinky 2 	-->
+            <!--@-->
+            <key code="34" action="c"/>
+            <!-- right middle 	-->
+            <key code="35" action="l"/>
+            <!-- right pinky 1 	-->
+            <key code="36" output="&#x000D;"/>
+            <!-- Return 		-->
+            <!-- bottom row -->
+            <!--key code="56"  output=""/>		<! Left Shift 		-->
+            <!-- even though this key is not here on actual ANSI keyboards
+	       we add a binding here for keyboards which physically have
+	       ISO layout but are mis-classified (VMware Fusion)
+	  -->
+            <key code="37" action="n"/>
+            <!-- right ring 	-->
+            <key code="38" action="h"/>
+            <!-- right index 1 	-->
+            <key code="39" output="-"/>
+            <!-- right pinky 2 	-->
+            <key code="40" action="t"/>
+            <!-- right middle 	-->
+            <key code="41" action="s"/>
+            <!-- right pinky 1 	-->
+            <key code="42" output="|"/>
+            <!-- right pinky 3 	-->
+            <!--@-->
+            <key code="43" output="w"/>
+            <!-- right middle 	-->
+            <key code="44" action="z"/>
+            <!-- right pinky 	-->
+            <!--key code="60"  output=""/>		<! Right Shift 		-->
+            <!-- numpad -->
+            <key code="45" output="b"/>
+            <!-- right index 2 	-->
+            <key code="46" action="m"/>
+            <!-- right index 1 	-->
+            <key code="47" output="v"/>
+            <!-- right ring 	-->
+            <key code="48" output="&#x0009;"/>
+            <!-- Tab 			-->
+            <key code="49" action="space"/>
+            <!-- Spacebar 		-->
+            <!--key code="54"  output=""/>		<! Right Command 	-->
+            <!--key code="61"  output=""/>		<! Right Option 	-->
+            <!--key code="110" output=""/>		<! Contextual Menu 	-->
+            <!--key code="62"  output=""/>		<! Right Control 	-->
+            <!-- function row -->
+            <key code="50" action="tilde"/>
+            <!-- left pinky 3	-->
+            <!--@-->
+            <key code="51" output="&#x0008;"/>
+            <!-- Backspace 		-->
+            <!-- top row -->
+            <key code="53" output="&#x001B;"/>
+            <!-- Esc 			-->
+            <key code="64" output="&#x0010;"/>
+            <key code="65" output="."/>
+            <!-- Decimal Sep.	-->
+            <!-- modifiers -->
+            <!--key code="59"  output=""/>		<! Left Control 	-->
+            <!--key code="58"  output=""/>		<! Left Option 		-->
+            <!--key code="55"  output=""/>		<! Left Command 	-->
+            <key code="66" output="&#x001D;"/>
+            <key code="67" output="-"/>
+            <!-- Num * 			-->
+            <key code="69" output="+"/>
+            <!-- Num + 			-->
+            <key code="70" output="&#x001C;"/>
+            <key code="71" output="&#x001B;"/>
+            <!-- Num Lock 		-->
+            <key code="72" output="&#x001F;"/>
+            <key code="75" output="*"/>
+            <!-- Num / 			-->
+            <key code="76" output="&#x0003;"/>
+            <!-- Enter 			-->
+            <key code="77" output="&#x001E;"/>
+            <key code="78" output="+"/>
+            <!-- Num - 			-->
+            <key code="79" output="&#x0010;"/>
+            <key code="80" output="&#x0010;"/>
+            <key code="81" output="/"/>
+            <!-- Num = 			-->
+            <key code="82" output="0"/>
+            <!-- Num 0 			-->
+            <key code="83" output="7"/>
+            <!-- Num 1 			-->
+            <key code="84" output="8"/>
+            <!-- Num 2 			-->
+            <key code="85" output="9"/>
+            <!-- Num 3 			-->
+            <key code="86" output="4"/>
+            <!-- Num 4 			-->
+            <key code="87" output="5"/>
+            <!-- Num 5 			-->
+            <key code="88" output="6"/>
+            <!-- Num 6 			-->
+            <key code="89" output="1"/>
+            <!-- Num 7 			-->
+            <key code="91" output="2"/>
+            <!-- Num 8 			-->
+            <key code="92" output="3"/>
+            <!-- Num 9 			-->
+            <key code="96" output="&#x0010;"/>
+            <!-- F5 			-->
+            <key code="97" output="&#x0010;"/>
+            <!-- F6 			-->
+            <key code="98" output="&#x0010;"/>
+            <!-- F7 			-->
+            <key code="99" output="&#x0010;"/>
+            <!-- F3 			-->
+            <key code="100" output="&#x0010;"/>
+            <!-- F8 			-->
+            <key code="101" output="&#x0010;"/>
+            <!-- F9 			-->
+            <key code="103" output="&#x0010;"/>
+            <!-- F11 			-->
+            <key code="105" output="&#x0010;"/>
+            <!-- PrtScn 		-->
+            <key code="106" output="&#x0010;"/>
+            <key code="107" output="&#x0010;"/>
+            <!-- ScrLk 			-->
+            <key code="109" output="&#x0010;"/>
+            <!-- F10 			-->
+            <key code="111" output="&#x0010;"/>
+            <!-- F12 			-->
+            <key code="113" output="&#x0010;"/>
+            <!-- Pause 			-->
+            <!-- navigation and control keys -->
+            <key code="114" output="&#x0005;"/>
+            <!-- Ins 			-->
+            <key code="115" output="&#x0001;"/>
+            <!-- Home 			-->
+            <key code="116" output="&#x000B;"/>
+            <!-- PgUp 			-->
+            <key code="117" output="&#x007F;"/>
+            <!-- Del 			-->
+            <key code="118" output="&#x0010;"/>
+            <!-- F4 			-->
+            <key code="119" output="&#x0004;"/>
+            <!-- End 			-->
+            <key code="120" output="&#x0010;"/>
+            <!-- F2 			-->
+            <key code="121" output="&#x000C;"/>
+            <!-- PgDn 			-->
+            <!-- arrow keys -->
+            <key code="122" output="&#x0010;"/>
+            <!-- F1 			-->
+            <key code="123" output="&#x001C;"/>
+            <!-- Left 			-->
+            <key code="124" output="&#x001D;"/>
+            <!-- Right 			-->
+            <key code="125" output="&#x001F;"/>
+            <!-- Down 			-->
+            <key code="126" output="&#x001E;"/>
+            <!-- Up 			-->
+        </keyMap>
+        <keyMap index="4">
+            <!-- upper-case option, items marked with at sign is unchanged
+	     compared to the unshifted version -->
+            <key code="0" output="å"/>
+            <!-- left pinky 	-->
+            <key code="1" output="ø"/>
+            <!-- left ring 		-->
+            <key code="2" output="æ"/>
+            <!-- left middle 	-->
+            <key code="3" output="é"/>
+            <!-- left index 1 	-->
+            <key code="4" output="ð"/>
+            <!-- right index 2 	-->
+            <key code="5" action="i"/>
+            <!-- left index 2 	-->
+            <!--*-->
+            <key code="6" action="acute"/>
+            <!-- left pinky 	-->
+            <key code="7" output="q"/>
+            <!-- left ring 		-->
+            <!--*-->
+            <key code="8" action="j"/>
+            <!-- left middle 	-->
+            <!--*-->
+            <key code="9" action="k"/>
+            <!-- left index 1 	-->
+            <!--*-->
+            <key code="10" action="compose"/>
+            <!--*-->
+            <key code="11" output="x"/>
+            <!-- left index 2 	-->
+            <!--*-->
+            <key code="12" action="diaeresis"/>
+            <!-- left pinky 	-->
+            <key code="13" output="«"/>
+            <!-- left ring 		-->
+            <key code="14" output="»"/>
+            <!-- left middle 	-->
+            <key code="15" output="¶"/>
+            <!-- left index 1 	-->
+            <key code="16" output="f"/>
+            <!-- right index 2 	-->
+            <!--*-->
+            <key code="17" output="ü"/>
+            <!-- left index 2 	-->
+            <key code="18" output="&#x0026;"/>
+            <!-- left pinky 2 	-->
+            <!--*-->
+            <key code="19" output="¤"/>
+            <!-- left pinky 1 	-->
+            <key code="20" output="¢"/>
+            <!-- left ring 		-->
+            <key code="21" output="¥"/>
+            <!-- left middle 	-->
+            <key code="22" output="£"/>
+            <!-- left index 2 	-->
+            <key code="23" output="€"/>
+            <!-- left index 1 	-->
+            <key code="24" action="grave"/>
+            <!-- right pinky 2 	-->
+            <key code="25" output="+"/>
+            <!-- right middle 	-->
+            <!--*-->
+            <key code="26" action="asterisk"/>
+            <!-- right index 2 	-->
+            <!--*-->
+            <key code="27" output="¡"/>
+            <!-- right pinky 1 	-->
+            <key code="28" output="½"/>
+            <!-- right index 1 	-->
+            <key code="29" output="]"/>
+            <!-- right ring 	-->
+            <!--*-->
+            <key code="30" action="circum"/>
+            <!-- right pinky 3 	-->
+            <!-- home row -->
+            <!--key code="57"  output=""/>		<! Caps Lock 		-->
+            <key code="31" output="®"/>
+            <!-- right ring 	-->
+            <key code="32" output=""/>
+            <!-- right index 1 	-->
+            <!--greek-->
+            <key code="33" output="¿"/>
+            <!-- right pinky 2 	-->
+            <key code="34" output="ç"/>
+            <!-- right middle 	-->
+            <key code="35" action="l"/>
+            <!-- right pinky 1 	-->
+            <!--*-->
+            <key code="36" output="&#x000D;"/>
+            <!-- Return 		-->
+            <!--*-->
+            <!-- bottom row -->
+            <!--key code="56"  output=""/>		<! Left Shift 		-->
+            <!-- even though this key is not here on actual ANSI keyboards
+	       we add a binding here for keyboards which physically have
+	       ISO layout but are mis-classified (VMware Fusion)
+	  -->
+            <key code="37" output="ñ"/>
+            <!-- right ring 	-->
+            <key code="38" action="acute"/>
+            <!-- right index 1 	-->
+            <key code="39" output="-"/>
+            <!-- right pinky 2 	-->
+            <!--*-->
+            <key code="40" output="þ"/>
+            <!-- right middle 	-->
+            <key code="41" output="ß"/>
+            <!-- right pinky 1 	-->
+            <key code="42" output="\"/>
+            <!-- right pinky 3 	-->
+            <!--*-->
+            <key code="43" output="w"/>
+            <!-- right middle 	-->
+            <!--*-->
+            <key code="44" action="z"/>
+            <!-- right pinky 	-->
+            <!--*-->
+            <!--key code="60"  output=""/>		<! Right Shift 		-->
+            <!-- numpad -->
+            <key code="45" output="b"/>
+            <!-- right index 2 	-->
+            <!--*-->
+            <key code="46" output=""/>
+            <!-- right index 1 	-->
+            <!--math-->
+            <key code="47" output="v"/>
+            <!-- right ring 	-->
+            <!--*-->
+            <key code="48" output="&#x0009;"/>
+            <!-- Tab            -->
+            <!--*-->
+            <key code="49" action="space"/>
+            <!-- Spacebar 		-->
+            <!--key code="54"  output=""/>		<! Right Command 	-->
+            <!--key code="61"  output=""/>		<! Right Option 	-->
+            <!--key code="110" output=""/>		<! Contextual Menu 	-->
+            <!--key code="62"  output=""/>		<! Right Control 	-->
+            <!-- function row -->
+            <key code="50" action="nasal"/>
+            <!-- left pinky 3	-->
+            <key code="51" output="&#x0008;"/>
+            <!-- Backspace 		-->
+            <!--*-->
+            <!-- top row -->
+            <key code="53" output="&#x001B;"/>
+            <!-- Esc            -->
+            <key code="64" output="&#x0010;"/>
+            <key code="65" output="."/>
+            <!-- Decimal Sep.	-->
+            <!-- modifiers -->
+            <!--key code="59"  output=""/>		<! Left Control 	-->
+            <!--key code="58"  output=""/>		<! Left Option 		-->
+            <!--key code="55"  output=""/>		<! Left Command 	-->
+            <key code="66" output="&#x001D;"/>
+            <key code="67" output="-"/>
+            <!-- Num *          -->
+            <key code="69" output="+"/>
+            <!-- Num +          -->
+            <key code="70" output="&#x001C;"/>
+            <key code="71" output="&#x001B;"/>
+            <!-- Num Lock       -->
+            <key code="72" output="&#x001F;"/>
+            <key code="75" output="*"/>
+            <!-- Num /          -->
+            <key code="76" output="&#x0003;"/>
+            <!-- Enter          -->
+            <key code="77" output="&#x001E;"/>
+            <key code="78" output="+"/>
+            <!-- Num -          -->
+            <key code="79" output="&#x0010;"/>
+            <key code="80" output="&#x0010;"/>
+            <key code="81" output="/"/>
+            <!-- Num =          -->
+            <key code="82" output="0"/>
+            <!-- Num 0          -->
+            <key code="83" output="7"/>
+            <!-- Num 1          -->
+            <key code="84" output="8"/>
+            <!-- Num 2          -->
+            <key code="85" output="9"/>
+            <!-- Num 3          -->
+            <key code="86" output="4"/>
+            <!-- Num 4          -->
+            <key code="87" output="5"/>
+            <!-- Num 5          -->
+            <key code="88" output="6"/>
+            <!-- Num 6          -->
+            <key code="89" output="1"/>
+            <!-- Num 7          -->
+            <key code="91" output="2"/>
+            <!-- Num 8          -->
+            <key code="92" output="3"/>
+            <!-- Num 9          -->
+            <key code="96" output="&#x0010;"/>
+            <!-- F5             -->
+            <key code="97" output="&#x0010;"/>
+            <!-- F6             -->
+            <key code="98" output="&#x0010;"/>
+            <!-- F7             -->
+            <key code="99" output="&#x0010;"/>
+            <!-- F3             -->
+            <key code="100" output="&#x0010;"/>
+            <!-- F8             -->
+            <key code="101" output="&#x0010;"/>
+            <!-- F9             -->
+            <key code="103" output="&#x0010;"/>
+            <!-- F11            -->
+            <key code="105" output="&#x0010;"/>
+            <!-- PrtScn 		-->
+            <key code="106" output="&#x0010;"/>
+            <key code="107" output="&#x0010;"/>
+            <!-- ScrLk          -->
+            <key code="109" output="&#x0010;"/>
+            <!-- F10            -->
+            <key code="111" output="&#x0010;"/>
+            <!-- F12            -->
+            <key code="113" output="&#x0010;"/>
+            <!-- Pause          -->
+            <!-- navigation and control keys -->
+            <key code="114" output="&#x0005;"/>
+            <!-- Ins            -->
+            <key code="115" output="&#x0001;"/>
+            <!-- Home           -->
+            <key code="116" output="&#x000B;"/>
+            <!-- PgUp           -->
+            <key code="117" output="&#x007F;"/>
+            <!-- Del            -->
+            <key code="118" output="&#x0010;"/>
+            <!-- F4             -->
+            <key code="119" output="&#x0004;"/>
+            <!-- End            -->
+            <key code="120" output="&#x0010;"/>
+            <!-- F2             -->
+            <key code="121" output="&#x000C;"/>
+            <!-- PgDn           -->
+            <!-- arrow keys -->
+            <key code="122" output="&#x0010;"/>
+            <!-- F1             -->
+            <key code="123" output="&#x001C;"/>
+            <!-- Left           -->
+            <key code="124" output="&#x001D;"/>
+            <!-- Right          -->
+            <key code="125" output="&#x001F;"/>
+            <!-- Down           -->
+            <key code="126" output="&#x001E;"/>
+            <!-- Up             -->
+        </keyMap>
+        <keyMap index="5">
+            <!-- option when caps lock is activated. those keys unaffected by
+         caps lock (but by shift) is marked with plus sign -->
+            <key code="0" output="Å"/>
+            <!-- left pinky 	-->
+            <key code="1" output="Ø"/>
+            <!-- left ring 		-->
+            <key code="2" output="Æ"/>
+            <!-- left middle 	-->
+            <key code="3" output="É"/>
+            <!-- left index 1 	-->
+            <key code="4" output="Ð"/>
+            <!-- right index 2 	-->
+            <key code="5" action="i"/>
+            <!-- left index 2 	-->
+            <!--*-->
+            <key code="6" action="acute"/>
+            <!-- left pinky 	-->
+            <!--@-->
+            <key code="7" output="q"/>
+            <!-- left ring 		-->
+            <!--*-->
+            <key code="8" action="j"/>
+            <!-- left middle 	-->
+            <!--*-->
+            <key code="9" action="k"/>
+            <!-- left index 1 	-->
+            <!--*-->
+            <key code="10" action="compose"/>
+            <!--*-->
+            <key code="11" output="x"/>
+            <!-- left index 2 	-->
+            <!--*-->
+            <key code="12" action="diaeresis"/>
+            <!-- left pinky 	-->
+            <!--@-->
+            <key code="13" output="“"/>
+            <!-- left ring 		-->
+            <key code="14" output="”"/>
+            <!-- left middle 	-->
+            <key code="15" output="§"/>
+            <!-- left index 1 	-->
+            <key code="16" output="f"/>
+            <!-- right index 2 	-->
+            <!--*-->
+            <key code="17" output="Ü"/>
+            <!-- left index 2 	-->
+            <key code="18" output="&#x0026;"/>
+            <!-- left pinky 2 	-->
+            <!--*-->
+            <key code="19" output="¤"/>
+            <!-- left pinky 1 	-->
+            <!--@-->
+            <key code="20" output="¢"/>
+            <!-- left ring 		-->
+            <!--@-->
+            <key code="21" output="¥"/>
+            <!-- left middle 	-->
+            <!--@-->
+            <key code="22" output="£"/>
+            <!-- left index 2 	-->
+            <!--@-->
+            <key code="23" output="€"/>
+            <!-- left index 1 	-->
+            <!--@-->
+            <key code="24" action="grave"/>
+            <!-- right pinky 2 	-->
+            <!--@-->
+            <key code="25" output="+"/>
+            <!-- right middle 	-->
+            <!--*-->
+            <key code="26" action="asterisk"/>
+            <!-- right index 2 	-->
+            <!--*-->
+            <key code="27" output="¡"/>
+            <!-- right pinky 1 	-->
+            <!--@-->
+            <key code="28" output="½"/>
+            <!-- right index 1 	-->
+            <!--@-->
+            <key code="29" output="]"/>
+            <!-- right ring 	-->
+            <!--*-->
+            <key code="30" action="breve"/>
+            <!-- right pinky 3 	-->
+            <!-- home row -->
+            <!--key code="57"  output=""/>		<! Caps Lock 		-->
+            <key code="31" output="™"/>
+            <!-- right ring 	-->
+            <key code="32" output=""/>
+            <!-- right index 1 	-->
+            <!--greek-->
+            <key code="33" output="¿"/>
+            <!-- right pinky 2 	-->
+            <!--@-->
+            <key code="34" output="Ç"/>
+            <!-- right middle 	-->
+            <key code="35" action="l"/>
+            <!-- right pinky 1 	-->
+            <!--*-->
+            <key code="36" output="&#x000D;"/>
+            <!-- Return 		-->
+            <!--*-->
+            <!-- bottom row -->
+            <!--key code="56"  output=""/>		<! Left Shift 		-->
+            <!-- even though this key is not here on actual ANSI keyboards
+	       we add a binding here for keyboards which physically have
+	       ISO layout but are mis-classified (VMware Fusion)
+	  -->
+            <key code="37" output="Ñ"/>
+            <!-- right ring 	-->
+            <key code="38" action="acute"/>
+            <!-- right index 1 	-->
+            <!--@-->
+            <key code="39" output="-"/>
+            <!-- right pinky 2 	-->
+            <!--*-->
+            <key code="40" output="Þ"/>
+            <!-- right middle 	-->
+            <key code="41" output="ß"/>
+            <!-- right pinky 1 	-->
+            <!--@-->
+            <key code="42" output="\"/>
+            <!-- right pinky 3 	-->
+            <!--*-->
+            <key code="43" output="w"/>
+            <!-- right middle 	-->
+            <!--*-->
+            <key code="44" action="z"/>
+            <!-- right pinky 	-->
+            <!--*-->
+            <!--key code="60"  output=""/>		<! Right Shift 		-->
+            <!-- numpad -->
+            <key code="45" output="b"/>
+            <!-- right index 2 	-->
+            <!--*-->
+            <key code="46" output=""/>
+            <!-- right index 1 	-->
+            <!--math-->
+            <key code="47" output="v"/>
+            <!-- right ring 	-->
+            <!--*-->
+            <key code="48" output="&#x0009;"/>
+            <!-- Tab            -->
+            <!--*-->
+            <key code="49" action="space"/>
+            <!-- Spacebar 		-->
+            <!--key code="54"  output=""/>		<! Right Command 	-->
+            <!--key code="61"  output=""/>		<! Right Option 	-->
+            <!--key code="110" output=""/>		<! Contextual Menu 	-->
+            <!--key code="62"  output=""/>		<! Right Control 	-->
+            <!-- function row -->
+            <key code="50" action="nasal"/>
+            <!-- left pinky 3	-->
+            <!--@-->
+            <key code="51" output="&#x0008;"/>
+            <!-- Backspace 		-->
+            <!--*-->
+            <!-- top row -->
+            <key code="53" output="&#x001B;"/>
+            <!-- Esc            -->
+            <key code="64" output="&#x0010;"/>
+            <key code="65" output="."/>
+            <!-- Decimal Sep.	-->
+            <!-- modifiers -->
+            <!--key code="59"  output=""/>		<! Left Control 	-->
+            <!--key code="58"  output=""/>		<! Left Option 		-->
+            <!--key code="55"  output=""/>		<! Left Command 	-->
+            <key code="66" output="&#x001D;"/>
+            <key code="67" output="-"/>
+            <!-- Num *          -->
+            <key code="69" output="+"/>
+            <!-- Num +          -->
+            <key code="70" output="&#x001C;"/>
+            <key code="71" output="&#x001B;"/>
+            <!-- Num Lock       -->
+            <key code="72" output="&#x001F;"/>
+            <key code="75" output="*"/>
+            <!-- Num /          -->
+            <key code="76" output="&#x0003;"/>
+            <!-- Enter          -->
+            <key code="77" output="&#x001E;"/>
+            <key code="78" output="+"/>
+            <!-- Num -          -->
+            <key code="79" output="&#x0010;"/>
+            <key code="80" output="&#x0010;"/>
+            <key code="81" output="/"/>
+            <!-- Num =          -->
+            <key code="82" output="0"/>
+            <!-- Num 0          -->
+            <key code="83" output="7"/>
+            <!-- Num 1          -->
+            <key code="84" output="8"/>
+            <!-- Num 2          -->
+            <key code="85" output="9"/>
+            <!-- Num 3          -->
+            <key code="86" output="4"/>
+            <!-- Num 4          -->
+            <key code="87" output="5"/>
+            <!-- Num 5          -->
+            <key code="88" output="6"/>
+            <!-- Num 6          -->
+            <key code="89" output="1"/>
+            <!-- Num 7          -->
+            <key code="91" output="2"/>
+            <!-- Num 8          -->
+            <key code="92" output="3"/>
+            <!-- Num 9          -->
+            <key code="96" output="&#x0010;"/>
+            <!-- F5             -->
+            <key code="97" output="&#x0010;"/>
+            <!-- F6             -->
+            <key code="98" output="&#x0010;"/>
+            <!-- F7             -->
+            <key code="99" output="&#x0010;"/>
+            <!-- F3             -->
+            <key code="100" output="&#x0010;"/>
+            <!-- F8             -->
+            <key code="101" output="&#x0010;"/>
+            <!-- F9             -->
+            <key code="103" output="&#x0010;"/>
+            <!-- F11            -->
+            <key code="105" output="&#x0010;"/>
+            <!-- PrtScn 		-->
+            <key code="106" output="&#x0010;"/>
+            <key code="107" output="&#x0010;"/>
+            <!-- ScrLk          -->
+            <key code="109" output="&#x0010;"/>
+            <!-- F10            -->
+            <key code="111" output="&#x0010;"/>
+            <!-- F12            -->
+            <key code="113" output="&#x0010;"/>
+            <!-- Pause          -->
+            <!-- navigation and control keys -->
+            <key code="114" output="&#x0005;"/>
+            <!-- Ins            -->
+            <key code="115" output="&#x0001;"/>
+            <!-- Home           -->
+            <key code="116" output="&#x000B;"/>
+            <!-- PgUp           -->
+            <key code="117" output="&#x007F;"/>
+            <!-- Del            -->
+            <key code="118" output="&#x0010;"/>
+            <!-- F4             -->
+            <key code="119" output="&#x0004;"/>
+            <!-- End            -->
+            <key code="120" output="&#x0010;"/>
+            <!-- F2             -->
+            <key code="121" output="&#x000C;"/>
+            <!-- PgDn           -->
+            <!-- arrow keys -->
+            <key code="122" output="&#x0010;"/>
+            <!-- F1             -->
+            <key code="123" output="&#x001C;"/>
+            <!-- Left           -->
+            <key code="124" output="&#x001D;"/>
+            <!-- Right          -->
+            <key code="125" output="&#x001F;"/>
+            <!-- Down           -->
+            <key code="126" output="&#x001E;"/>
+            <!-- Up             -->
+        </keyMap>
+        <keyMap index="6">
+            <key code="0" output="Å"/>
+            <!-- left pinky 	-->
+            <key code="1" output="Ø"/>
+            <!-- left ring 		-->
+            <key code="2" output="Æ"/>
+            <!-- left middle 	-->
+            <key code="3" output="É"/>
+            <!-- left index 1 	-->
+            <key code="4" output="Ð"/>
+            <!-- right index 2 	-->
+            <key code="5" action="i"/>
+            <!-- left index 2 	-->
+            <!--*-->
+            <key code="6" action="acute"/>
+            <!-- left pinky 	-->
+            <!--@-->
+            <key code="7" output="q"/>
+            <!-- left ring 		-->
+            <!--*-->
+            <key code="8" action="j"/>
+            <!-- left middle 	-->
+            <!--*-->
+            <key code="9" action="k"/>
+            <!-- left index 1 	-->
+            <!--*-->
+            <key code="10" action="compose"/>
+            <!--*-->
+            <key code="11" output="x"/>
+            <!-- left index 2 	-->
+            <!--*-->
+            <key code="12" action="diaeresis"/>
+            <!-- left pinky 	-->
+            <!--@-->
+            <key code="13" output="«"/>
+            <!-- left ring 		-->
+            <!--+-->
+            <key code="14" output="»"/>
+            <!-- left middle 	-->
+            <!--+-->
+            <key code="15" output="¶"/>
+            <!-- left index 1 	-->
+            <!--+-->
+            <key code="16" output="f"/>
+            <!-- right index 2 	-->
+            <!--*-->
+            <key code="17" output="Ü"/>
+            <!-- left index 2 	-->
+            <key code="18" output="&#x0026;"/>
+            <!-- left pinky 2 	-->
+            <!--*-->
+            <key code="19" output="¤"/>
+            <!-- left pinky 1 	-->
+            <!--@-->
+            <key code="20" output="¢"/>
+            <!-- left ring 		-->
+            <!--@-->
+            <key code="21" output="¥"/>
+            <!-- left middle 	-->
+            <!--@-->
+            <key code="22" output="£"/>
+            <!-- left index 2 	-->
+            <!--@-->
+            <key code="23" output="€"/>
+            <!-- left index 1 	-->
+            <!--@-->
+            <key code="24" action="grave"/>
+            <!-- right pinky 2 	-->
+            <!--@-->
+            <key code="25" output="+"/>
+            <!-- right middle 	-->
+            <!--*-->
+            <key code="26" action="asterisk"/>
+            <!-- right index 2 	-->
+            <!--*-->
+            <key code="27" output="¡"/>
+            <!-- right pinky 1 	-->
+            <!--@-->
+            <key code="28" output="½"/>
+            <!-- right index 1 	-->
+            <!--@-->
+            <key code="29" output="]"/>
+            <!-- right ring 	-->
+            <!--*-->
+            <key code="30" action="circum"/>
+            <!-- right pinky 3 	-->
+            <!-- home row -->
+            <!--key code="57"  output=""/>		<! Caps Lock 		-->
+            <key code="31" output="®"/>
+            <!-- right ring 	-->
+            <key code="32" output=""/>
+            <!-- right index 1 	-->
+            <!--greek-->
+            <key code="33" output="¿"/>
+            <!-- right pinky 2 	-->
+            <!--@-->
+            <key code="34" output="Ç"/>
+            <!-- right middle 	-->
+            <key code="35" action="l"/>
+            <!-- right pinky 1 	-->
+            <!--*-->
+            <key code="36" output="&#x000D;"/>
+            <!-- Return 		-->
+            <!--*-->
+            <!-- bottom row -->
+            <!--key code="56"  output=""/>		<! Left Shift 		-->
+            <!-- even though this key is not here on actual ANSI keyboards
+	       we add a binding here for keyboards which physically have
+	       ISO layout but are mis-classified (VMware Fusion)
+	  -->
+            <key code="37" output="Ñ"/>
+            <!-- right ring 	-->
+            <key code="38" action="acute"/>
+            <!-- right index 1 	-->
+            <!--@-->
+            <key code="39" output="-"/>
+            <!-- right pinky 2 	-->
+            <!--*-->
+            <key code="40" output="Þ"/>
+            <!-- right middle 	-->
+            <key code="41" output="ß"/>
+            <!-- right pinky 1 	-->
+            <!--@-->
+            <key code="42" output="\"/>
+            <!-- right pinky 3 	-->
+            <!--*-->
+            <key code="43" output="w"/>
+            <!-- right middle 	-->
+            <!--*-->
+            <key code="44" action="z"/>
+            <!-- right pinky 	-->
+            <!--*-->
+            <!--key code="60"  output=""/>		<! Right Shift 		-->
+            <!-- numpad -->
+            <key code="45" output="b"/>
+            <!-- right index 2 	-->
+            <!--*-->
+            <key code="46" output=""/>
+            <!-- right index 1 	-->
+            <!--math-->
+            <key code="47" output="v"/>
+            <!-- right ring 	-->
+            <!--*-->
+            <key code="48" output="&#x0009;"/>
+            <!-- Tab            -->
+            <!--*-->
+            <key code="49" action="space"/>
+            <!-- Spacebar 		-->
+            <!--key code="54"  output=""/>		<! Right Command 	-->
+            <!--key code="61"  output=""/>		<! Right Option 	-->
+            <!--key code="110" output=""/>		<! Contextual Menu 	-->
+            <!--key code="62"  output=""/>		<! Right Control 	-->
+            <!-- function row -->
+            <key code="50" action="nasal"/>
+            <!-- left pinky 3	-->
+            <!--@-->
+            <key code="51" output="&#x0008;"/>
+            <!-- Backspace 		-->
+            <!--*-->
+            <!-- top row -->
+            <key code="53" output="&#x001B;"/>
+            <!-- Esc            -->
+            <key code="64" output="&#x0010;"/>
+            <key code="65" output="."/>
+            <!-- Decimal Sep.	-->
+            <!-- modifiers -->
+            <!--key code="59"  output=""/>		<! Left Control 	-->
+            <!--key code="58"  output=""/>		<! Left Option 		-->
+            <!--key code="55"  output=""/>		<! Left Command 	-->
+            <key code="66" output="&#x001D;"/>
+            <key code="67" output="-"/>
+            <!-- Num *          -->
+            <key code="69" output="+"/>
+            <!-- Num +          -->
+            <key code="70" output="&#x001C;"/>
+            <key code="71" output="&#x001B;"/>
+            <!-- Num Lock       -->
+            <key code="72" output="&#x001F;"/>
+            <key code="75" output="*"/>
+            <!-- Num /          -->
+            <key code="76" output="&#x0003;"/>
+            <!-- Enter          -->
+            <key code="77" output="&#x001E;"/>
+            <key code="78" output="+"/>
+            <!-- Num -          -->
+            <key code="79" output="&#x0010;"/>
+            <key code="80" output="&#x0010;"/>
+            <key code="81" output="/"/>
+            <!-- Num =          -->
+            <key code="82" output="0"/>
+            <!-- Num 0          -->
+            <key code="83" output="7"/>
+            <!-- Num 1          -->
+            <key code="84" output="8"/>
+            <!-- Num 2          -->
+            <key code="85" output="9"/>
+            <!-- Num 3          -->
+            <key code="86" output="4"/>
+            <!-- Num 4          -->
+            <key code="87" output="5"/>
+            <!-- Num 5          -->
+            <key code="88" output="6"/>
+            <!-- Num 6          -->
+            <key code="89" output="1"/>
+            <!-- Num 7          -->
+            <key code="91" output="2"/>
+            <!-- Num 8          -->
+            <key code="92" output="3"/>
+            <!-- Num 9          -->
+            <key code="96" output="&#x0010;"/>
+            <!-- F5             -->
+            <key code="97" output="&#x0010;"/>
+            <!-- F6             -->
+            <key code="98" output="&#x0010;"/>
+            <!-- F7             -->
+            <key code="99" output="&#x0010;"/>
+            <!-- F3             -->
+            <key code="100" output="&#x0010;"/>
+            <!-- F8             -->
+            <key code="101" output="&#x0010;"/>
+            <!-- F9             -->
+            <key code="103" output="&#x0010;"/>
+            <!-- F11            -->
+            <key code="105" output="&#x0010;"/>
+            <!-- PrtScn 		-->
+            <key code="106" output="&#x0010;"/>
+            <key code="107" output="&#x0010;"/>
+            <!-- ScrLk          -->
+            <key code="109" output="&#x0010;"/>
+            <!-- F10            -->
+            <key code="111" output="&#x0010;"/>
+            <!-- F12            -->
+            <key code="113" output="&#x0010;"/>
+            <!-- Pause          -->
+            <!-- navigation and control keys -->
+            <key code="114" output="&#x0005;"/>
+            <!-- Ins            -->
+            <key code="115" output="&#x0001;"/>
+            <!-- Home           -->
+            <key code="116" output="&#x000B;"/>
+            <!-- PgUp           -->
+            <key code="117" output="&#x007F;"/>
+            <!-- Del            -->
+            <key code="118" output="&#x0010;"/>
+            <!-- F4             -->
+            <key code="119" output="&#x0004;"/>
+            <!-- End            -->
+            <key code="120" output="&#x0010;"/>
+            <!-- F2             -->
+            <key code="121" output="&#x000C;"/>
+            <!-- PgDn           -->
+            <!-- arrow keys -->
+            <key code="122" output="&#x0010;"/>
+            <!-- F1             -->
+            <key code="123" output="&#x001C;"/>
+            <!-- Left           -->
+            <key code="124" output="&#x001D;"/>
+            <!-- Right          -->
+            <key code="125" output="&#x001F;"/>
+            <!-- Down           -->
+            <key code="126" output="&#x001E;"/>
+            <!-- Up             -->
+        </keyMap>
+        <keyMap index="7">
+            <!-- number row -->
+            <key code="0" output="&#x0001;"/>
+            <!-- ctrl-A			-->
+            <key code="1" output="&#x000F;"/>
+            <!-- ctrl-O			-->
+            <key code="2" output="&#x0005;"/>
+            <!-- ctrl-E		 	-->
+            <key code="3" output="&#x0015;"/>
+            <!-- ctrl-U		 	-->
+            <key code="4" output="&#x0004;"/>
+            <!-- ctrl-D		 	-->
+            <key code="5" output="&#x0009;"/>
+            <!-- ctrl-I		 	-->
+            <key code="7" output="&#x0011;"/>
+            <!-- ctrl-Q			-->
+            <key code="8" output="&#x000A;"/>
+            <!-- ctrl-J		 	-->
+            <key code="9" output="&#x000B;"/>
+            <!-- ctrl-K		 	-->
+            <key code="11" output="&#x0018;"/>
+            <!-- ctrl-X		 	-->
+            <key code="15" output="&#x0010;"/>
+            <!-- ctrl-P		 	-->
+            <key code="16" output="&#x0006;"/>
+            <!-- ctrl-F		 	-->
+            <key code="17" output="&#x0019;"/>
+            <!-- ctrl-Y		 	-->
+            <key code="19" output="&#x001B;"/>
+            <!-- ctrl-[			-->
+            <key code="29" output="&#x001D;"/>
+            <!-- ctrl-]		 	-->
+            <key code="30" output="&#x0000;"/>
+            <!-- ctrl-@		 	-->
+            <!-- home row -->
+            <key code="31" output="&#x0012;"/>
+            <!-- ctrl-R		 	-->
+            <key code="32" output="&#x0007;"/>
+            <!-- ctrl-G		 	-->
+            <key code="34" output="&#x0003;"/>
+            <!-- ctrl-C			-->
+            <key code="35" output="&#x000C;"/>
+            <!-- ctrl-L		 	-->
+            <key code="36" output="&#x000D;"/>
+            <key code="37" output="&#x000E;"/>
+            <!-- ctrl-N		 	-->
+            <key code="38" output="&#x0008;"/>
+            <!-- ctrl-H		 	-->
+            <key code="39" output="&#x001F;"/>
+            <!-- ctrl-_		 	-->
+            <key code="40" output="&#x0014;"/>
+            <!-- ctrl-T		 	-->
+            <key code="41" output="&#x0013;"/>
+            <!-- ctrl-S		 	-->
+            <key code="42" output="&#x001C;"/>
+            <!-- ctrl-\		 	-->
+            <!-- bottom row -->
+            <key code="43" output="&#x0017;"/>
+            <!-- ctrl-W		 	-->
+            <key code="44" output="&#x001A;"/>
+            <!-- ctrl-Z		 	-->
+            <key code="45" output="&#x0002;"/>
+            <!-- ctrl-B			-->
+            <key code="46" output="&#x000D;"/>
+            <!-- ctrl-M		 	-->
+            <key code="47" output="&#x0016;"/>
+            <!-- ctrl-V		 	-->
+            <key code="48" output="&#x0009;"/>
+            <key code="51" output="&#x007F;"/>
+            <!-- ctrl-Backspace -->
+            <!-- top row -->
+            <key code="53" output="&#x001B;"/>
+            <key code="64" output="&#x0010;"/>
+            <key code="66" output="&#x001D;"/>
+            <key code="70" output="&#x001C;"/>
+            <key code="71" output="&#x001B;"/>
+            <key code="72" output="&#x001F;"/>
+            <key code="76" output="&#x0003;"/>
+            <key code="77" output="&#x001E;"/>
+            <key code="79" output="&#x0010;"/>
+            <key code="80" output="&#x0010;"/>
+            <key code="96" output="&#x0010;"/>
+            <key code="97" output="&#x0010;"/>
+            <key code="98" output="&#x0010;"/>
+            <key code="99" output="&#x0010;"/>
+            <key code="100" output="&#x0010;"/>
+            <key code="101" output="&#x0010;"/>
+            <key code="103" output="&#x0010;"/>
+            <key code="105" output="&#x0010;"/>
+            <key code="106" output="&#x0010;"/>
+            <key code="107" output="&#x0010;"/>
+            <key code="109" output="&#x0010;"/>
+            <key code="111" output="&#x0010;"/>
+            <key code="113" output="&#x0010;"/>
+            <key code="114" output="&#x0005;"/>
+            <key code="115" output="&#x0001;"/>
+            <key code="116" output="&#x000B;"/>
+            <key code="117" output="&#x007F;"/>
+            <key code="118" output="&#x0010;"/>
+            <key code="119" output="&#x0004;"/>
+            <key code="120" output="&#x0010;"/>
+            <key code="121" output="&#x000C;"/>
+            <key code="122" output="&#x0010;"/>
+            <key code="123" output="&#x001C;"/>
+            <key code="124" output="&#x001D;"/>
+            <key code="125" output="&#x001F;"/>
+            <key code="126" output="&#x001E;"/>
+        </keyMap>
+    </keyMapSet>
+    <keyMapSet id="ISO">
+        <keyMap index="0" baseMapSet="ANSI" baseIndex="0">
+            <key code="10" output="$"/>
+            <key code="50" output="$"/>
+            <key code="94" action="compose"/>
+            <!-- ABNT kbds only -->
+        </keyMap>
+        <keyMap index="1" baseMapSet="ANSI" baseIndex="1">
+            <key code="10" action="tilde"/>
+            <key code="50" output="~"/>
+            <key code="94" action="compose"/>
+            <!-- ABNT kbds only -->
+        </keyMap>
+        <keyMap index="2" baseMapSet="ANSI" baseIndex="2">
+            <key code="10" output="$"/>
+            <key code="50" output="~"/>
+            <key code="94" action="compose"/>
+            <!-- ABNT kbds only -->
+        </keyMap>
+        <keyMap index="3" baseMapSet="ANSI" baseIndex="3">
+            <key code="10" action="tilde"/>
+            <key code="50" action="compose"/>
+            <key code="94" action="compose"/>
+            <!-- ABNT kbds only -->
+        </keyMap>
+        <keyMap index="4" baseMapSet="ANSI" baseIndex="4">
+            <key code="10" action="nasal"/>
+            <key code="50" action="compose"/>
+            <key code="94" action="compose"/>
+            <!-- ABNT kbds only -->
+        </keyMap>
+        <keyMap index="5" baseMapSet="ANSI" baseIndex="5">
+            <key code="10" action="nasal"/>
+            <key code="50" action="compose"/>
+            <key code="94" action="compose"/>
+            <!-- ABNT kbds only -->
+        </keyMap>
+        <keyMap index="6" baseMapSet="ANSI" baseIndex="6">
+            <key code="10" action="nasal"/>
+            <key code="50" action="compose"/>
+            <key code="94" action="compose"/>
+            <!-- ABNT kbds only -->
+        </keyMap>
+        <keyMap index="7" baseMapSet="ANSI" baseIndex="7">
+            <key code="10" output="$"/>
+            <key code="50" action="compose"/>
+            <key code="94" action="compose"/>
+            <!-- ABNT kbds only -->
+        </keyMap>
+    </keyMapSet>
+    <keyMapSet id="JIS">
+        <keyMap index="0" baseMapSet="ANSI" baseIndex="0">
+            <key code="93" output=""/>
+            <!-- Yen 			-->
+            <key code="94" output=""/>
+            <!-- Underscore 	-->
+            <key code="95" output=""/>
+            <!-- Keypad Comma 	-->
+            <key code="102" output=""/>
+            <!-- Switch to Eisu -->
+            <key code="104" output=""/>
+            <!-- Switch to Kana -->
+        </keyMap>
+        <keyMap index="1" baseMapSet="ANSI" baseIndex="1">
+            <key code="93" output=""/>
+            <!-- Yen 			-->
+            <key code="94" output=""/>
+            <!-- Underscore 	-->
+            <key code="95" output=""/>
+            <!-- Keypad Comma 	-->
+            <key code="102" output=""/>
+            <!-- Switch to Eisu -->
+            <key code="104" output=""/>
+            <!-- Switch to Kana -->
+        </keyMap>
+        <keyMap index="2" baseMapSet="ANSI" baseIndex="2">
+            <key code="93" output=""/>
+            <!-- Yen 			-->
+            <key code="94" output=""/>
+            <!-- Underscore 	-->
+            <key code="95" output=""/>
+            <!-- Keypad Comma 	-->
+            <key code="102" output=""/>
+            <!-- Switch to Eisu -->
+            <key code="104" output=""/>
+            <!-- Switch to Kana -->
+        </keyMap>
+        <keyMap index="3" baseMapSet="ANSI" baseIndex="3">
+            <key code="93" output=""/>
+            <!-- Yen 			-->
+            <key code="94" output=""/>
+            <!-- Underscore 	-->
+            <key code="95" output=""/>
+            <!-- Keypad Comma 	-->
+            <key code="102" output=""/>
+            <!-- Switch to Eisu -->
+            <key code="104" output=""/>
+            <!-- Switch to Kana -->
+        </keyMap>
+        <keyMap index="4" baseMapSet="ANSI" baseIndex="4">
+            <key code="93" output=""/>
+            <!-- Yen 			-->
+            <key code="94" output=""/>
+            <!-- Underscore 	-->
+            <key code="95" output=""/>
+            <!-- Keypad Comma 	-->
+            <key code="102" output=""/>
+            <!-- Switch to Eisu -->
+            <key code="104" output=""/>
+            <!-- Switch to Kana -->
+        </keyMap>
+        <keyMap index="5" baseMapSet="ANSI" baseIndex="5">
+            <key code="93" output=""/>
+            <!-- Yen 			-->
+            <key code="94" output=""/>
+            <!-- Underscore 	-->
+            <key code="95" output=""/>
+            <!-- Keypad Comma 	-->
+            <key code="102" output=""/>
+            <!-- Switch to Eisu -->
+            <key code="104" output=""/>
+            <!-- Switch to Kana -->
+        </keyMap>
+        <keyMap index="6" baseMapSet="ANSI" baseIndex="6">
+            <key code="93" output=""/>
+            <!-- Yen 			-->
+            <key code="94" output=""/>
+            <!-- Underscore 	-->
+            <key code="95" output=""/>
+            <!-- Keypad Comma 	-->
+            <key code="102" output=""/>
+            <!-- Switch to Eisu -->
+            <key code="104" output=""/>
+            <!-- Switch to Kana -->
+        </keyMap>
+        <keyMap index="7" baseMapSet="ANSI" baseIndex="7">
+            <key code="93" output=""/>
+            <!-- Yen 			-->
+            <key code="94" output=""/>
+            <!-- Underscore 	-->
+            <key code="95" output=""/>
+            <!-- Keypad Comma 	-->
+            <key code="102" output=""/>
+            <!-- Switch to Eisu -->
+            <key code="104" output=""/>
+            <!-- Switch to Kana -->
+        </keyMap>
+    </keyMapSet>
+    <actions>
+        <action id="A">
+            <when state="none" output="A"/>
+            <when state="acute" output="Á"/>
+            <when state="alig" output="Å"/>
+            <when state="circum" output="Â"/>
+            <when state="compose" next="alig"/>
+            <when state="diaeresis" output="Ä"/>
+            <when state="grave" output="À"/>
+            <when state="macron" output="Ā"/>
+            <when state="nasal" output="Ã"/>
+            <when state="ring" output="Å"/>
+        </action>
+        <action id="C">
+            <when state="none" output="C"/>
+            <when state="cedilla" output="Ç"/>
+            <when state="compose" next="caron"/>
+        </action>
+        <action id="D">
+            <when state="none" output="D"/>
+            <when state="compose" next="eth"/>
+        </action>
+        <action id="E">
+            <when state="none" output="E"/>
+            <when state="acute" output="É"/>
+            <when state="alig" output="Æ"/>
+            <when state="circum" output="Ê"/>
+            <when state="diaeresis" output="Ë"/>
+            <when state="grave" output="È"/>
+        </action>
+        <action id="G">
+            <when state="none" output="G"/>
+        </action>
+        <action id="H">
+            <when state="none" output="H"/>
+        </action>
+        <action id="I">
+            <when state="none" output="I"/>
+            <when state="acute" output="Í"/>
+            <when state="circum" output="Î"/>
+            <when state="diaeresis" output="Ï"/>
+            <when state="grave" output="Ì"/>
+        </action>
+        <action id="J">
+            <when state="none" output="J"/>
+        </action>
+        <action id="K">
+            <when state="none" output="K"/>
+        </action>
+        <action id="L">
+            <when state="none" output="L"/>
+        </action>
+        <action id="M">
+            <when state="none" output="M"/>
+            <when state="thorn" output="™"/>
+        </action>
+        <action id="N">
+            <when state="none" output="N"/>
+            <when state="nasal" output="Ñ"/>
+        </action>
+        <action id="O">
+            <when state="none" output="O"/>
+            <when state="acute" output="Ó"/>
+            <when state="caron" output="©"/>
+            <when state="circum" output="Ô"/>
+            <when state="compose" next="ring"/>
+            <when state="diaeresis" output="Ö"/>
+            <when state="grave" output="Ò"/>
+            <when state="nasal" output="Õ"/>
+            <when state="stroke" output="Ø"/>
+        </action>
+        <action id="R">
+            <when state="none" output="R"/>
+        </action>
+        <action id="S">
+            <when state="none" output="S"/>
+            <when state="compose" next="ssharp"/>
+            <when state="dot" output="Ș"/>
+        </action>
+        <action id="T">
+            <when state="none" output="T"/>
+            <when state="compose" next="thorn"/>
+            <when state="dot" output="Ț"/>
+        </action>
+        <action id="U">
+            <when state="none" output="U"/>
+            <when state="acute" output="Ú"/>
+            <when state="circum" output="Û"/>
+            <when state="diaeresis" output="Ü"/>
+            <when state="grave" output="Ù"/>
+        </action>
+        <action id="Y">
+            <when state="none" output="Y"/>
+            <when state="acute" output="Ý"/>
+        </action>
+        <action id="Z">
+            <when state="none" output="Z"/>
+        </action>
+        <action id="a">
+            <when state="none" output="a"/>
+            <when state="acute" output="á"/>
+            <when state="alig" output="å"/>
+            <when state="circum" output="â"/>
+            <when state="compose" next="alig"/>
+            <when state="diaeresis" output="ä"/>
+            <when state="grave" output="à"/>
+            <when state="macron" output="ā"/>
+            <when state="nasal" output="ã"/>
+            <when state="ring" output="å"/>
+        </action>
+        <action id="acute">
+            <when state="none" next="acute"/>
+        </action>
+        <action id="apostrophe">
+            <when state="none" output="&#x0027;"/>
+            <when state="compose" next="acute"/>
+            <when state="greater" output="’"/>
+            <when state="less" output="‘"/>
+        </action>
+        <action id="asterisk">
+            <when state="none" output=")"/>
+            <when state="compose" next="ring"/>
+        </action>
+        <action id="at">
+            <when state="none" output="@"/>
+            <when state="compose" next="alig"/>
+        </action>
+        <action id="backquote">
+            <when state="none" output="`"/>
+            <when state="compose" next="grave"/>
+        </action>
+        <action id="breve">
+            <when state="none" next="breve"/>
+        </action>
+        <action id="c">
+            <when state="none" output="c"/>
+            <when state="cedilla" output="ç"/>
+            <when state="compose" next="caron"/>
+        </action>
+        <action id="caret">
+            <when state="none" output="^"/>
+            <when state="compose" next="circum"/>
+        </action>
+        <action id="circum">
+            <when state="none" next="circum"/>
+        </action>
+        <action id="colon">
+            <when state="none" output=":"/>
+            <when state="compose" next="diaeresis"/>
+        </action>
+        <action id="comma">
+            <when state="none" output=","/>
+            <when state="compose" next="cedilla"/>
+        </action>
+        <action id="compose">
+            <when state="none" next="compose"/>
+        </action>
+        <action id="d">
+            <when state="none" output="d"/>
+            <when state="compose" next="eth"/>
+        </action>
+        <action id="dash">
+            <when state="none" output="-"/>
+            <when state="compose" next="macron"/>
+            <when state="dot" output="·"/>
+        </action>
+        <action id="diaeresis">
+            <when state="none" next="diaeresis"/>
+        </action>
+        <action id="e">
+            <when state="none" output="e"/>
+            <when state="acute" output="é"/>
+            <when state="alig" output="æ"/>
+            <when state="circum" output="ê"/>
+            <when state="diaeresis" output="ë"/>
+            <when state="grave" output="è"/>
+        </action>
+        <action id="g">
+            <when state="none" output="g"/>
+        </action>
+        <action id="grave">
+            <when state="none" next="grave"/>
+        </action>
+        <action id="greater">
+            <when state="none" output="&#x003E;"/>
+            <when state="acute" output="’"/>
+            <when state="compose" next="greater"/>
+            <when state="diaeresis" output="”"/>
+        </action>
+        <!-- dead key actions; go straight to a state and wait for key -->
+        <action id="h">
+            <when state="none" output="h"/>
+        </action>
+        <action id="i">
+            <when state="none" output="i"/>
+            <when state="acute" output="í"/>
+            <when state="circum" output="î"/>
+            <when state="diaeresis" output="ï"/>
+            <when state="grave" output="ì"/>
+        </action>
+        <action id="j">
+            <when state="none" output="j"/>
+        </action>
+        <action id="k">
+            <when state="none" output="k"/>
+        </action>
+        <action id="l">
+            <when state="none" output="l"/>
+        </action>
+        <action id="less">
+            <when state="none" output="&#x003C;"/>
+            <when state="acute" output="‘"/>
+            <when state="compose" next="less"/>
+            <when state="diaeresis" output="“"/>
+        </action>
+        <action id="lparen">
+            <when state="none" output="&#x0026;"/>
+            <when state="compose" next="breve"/>
+        </action>
+        <action id="m">
+            <when state="none" output="m"/>
+        </action>
+        <action id="n">
+            <when state="none" output="n"/>
+            <when state="nasal" output="ñ"/>
+        </action>
+        <action id="nasal">
+            <when state="none" next="nasal"/>
+        </action>
+        <!-- same as the terminator table below -->
+        <action id="o">
+            <when state="none" output="o"/>
+            <when state="acute" output="ó"/>
+            <when state="caron" output="©"/>
+            <when state="circum" output="ô"/>
+            <when state="compose" next="ring"/>
+            <when state="diaeresis" output="ö"/>
+            <when state="grave" output="ò"/>
+            <when state="nasal" output="õ"/>
+            <when state="stroke" output="ø"/>
+        </action>
+        <action id="period">
+            <when state="none" output="."/>
+            <when state="compose" next="dot"/>
+            <when state="dot" output="…"/>
+        </action>
+        <action id="quote">
+            <when state="none" output="&#x0022;"/>
+            <when state="compose" next="diaeresis"/>
+            <when state="greater" output="”"/>
+            <when state="less" output="“"/>
+        </action>
+        <action id="r">
+            <when state="none" output="r"/>
+        </action>
+        <action id="s">
+            <when state="none" output="s"/>
+            <when state="compose" next="ssharp"/>
+            <when state="dot" output="ș"/>
+        </action>
+        <action id="semi">
+            <when state="none" output=";"/>
+            <when state="compose" next="diaeresis"/>
+        </action>
+        <action id="slash">
+            <when state="none" output="/"/>
+            <when state="compose" next="stroke"/>
+        </action>
+        <action id="space">
+            <when state="none" output=" "/>
+            <when state="acute" output="´"/>
+            <when state="alig" output="a"/>
+            <when state="breve" output="("/>
+            <when state="caron" output="c"/>
+            <when state="cedilla" output="¸"/>
+            <when state="circum" output="ˆ"/>
+            <when state="diaeresis" output="¨"/>
+            <when state="dot" output="."/>
+            <when state="eth" output="e"/>
+            <when state="grave" output="`"/>
+            <when state="greater" output="&#x003E;"/>
+            <when state="less" output="&#x003C;"/>
+            <when state="macron" output="-"/>
+            <when state="nasal" output="˜"/>
+            <when state="ring" output="o"/>
+            <when state="ssharp" output="s"/>
+            <when state="stroke" output="/"/>
+            <when state="thorn" output="t"/>
+        </action>
+        <action id="t">
+            <when state="none" output="t"/>
+            <when state="compose" next="thorn"/>
+            <when state="dot" output="ț"/>
+        </action>
+        <action id="tilde">
+            <when state="none" output="~"/>
+            <when state="compose" next="nasal"/>
+        </action>
+        <action id="u">
+            <when state="none" output="u"/>
+            <when state="acute" output="ú"/>
+            <when state="circum" output="û"/>
+            <when state="diaeresis" output="ü"/>
+            <when state="grave" output="ù"/>
+        </action>
+        <action id="y">
+            <when state="none" output="y"/>
+            <when state="acute" output="ý"/>
+            <when state="diaeresis" output="ÿ"/>
+        </action>
+        <action id="z">
+            <when state="none" output="z"/>
+        </action>
+        <action id="zero">
+            <when state="none" output="7"/>
+            <when state="stroke" output="∞"/>
+        </action>
+    </actions>
+    <terminators>
+        <when state="acute" output="´"/>
+        <when state="alig" output="a"/>
+        <when state="breve" output="˘"/>
+        <when state="caron" output="c"/>
+        <when state="cedilla" output="¸"/>
+        <when state="circum" output="ˆ"/>
+        <when state="compose" output=""/>
+        <when state="diaeresis" output="¨"/>
+        <when state="dot" output="˙"/>
+        <when state="eth" output="d"/>
+        <when state="grave" output="`"/>
+        <when state="greater" output="&#x003E;"/>
+        <when state="less" output="&#x003C;"/>
+        <when state="macron" output="-"/>
+        <when state="nasal" output="˜"/>
+        <when state="ring" output="o"/>
+        <when state="ssharp" output="s"/>
+        <when state="stroke" output="/"/>
+        <when state="thorn" output="t"/>
+    </terminators>
+</keyboard>
