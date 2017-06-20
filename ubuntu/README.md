@@ -10,12 +10,12 @@ sudo cat real-prog-dvorak >> /usr/share/X11/xkb/symbols/us
 Then you have to update the `sudo vim /usr/share/X11/xkb/rules/evdev.xml` with the following, add it near the other English keyboards
 
 ```
-<model>
+<variant>
     <configItem>
         <name>real-prog-dvorak</name>
         <description>English (Real Programmers Dvorak)</description>
         <vendor>MichaelPaulson</vendor>
     </configItem>
-</model>
+</variant>
 ```
 
