@@ -85,7 +85,7 @@
             <key code="49" output=" "/>
             <key code="50" output="$"/>
             <key code="51" output="&#x0008;"/>
-            <key code="53" action="&#x001B; 1"/>
+            <key code="53" output="&#x001B;"/>
             <key code="64" output="&#x0010;"/>
             <key code="65" output=""/>
             <key code="66" output="&#x001D;"/>
