@@ -1,1 +1,1 @@
-```sudo cp ./real_prog_dvoark.keylayout /Library/Keybaord\ Layouts```
+```sudo cp ./real_prog_dvorak.keylayout /Library/Keyboard\ Layouts```
