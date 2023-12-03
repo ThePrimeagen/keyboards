@@ -6,7 +6,7 @@ Add it to your systems keyboard and restart your computer.
 cp real-prog-dvorak ~/usr/share/X11/xkb/symbols/real-prog-dovark
 ```
 
-Then you have to update the `sudo vim /usr/share/X11/xkb/rules/evdev.xml` with the following, add it inside the `<layoutList>` tag. After that you have to restart your computer. After that the layout should be available in the keyboard settings. `Settings > Keyboard > Input Sources > + > English (Real Programmers Dvorak)`
+Then you have to update the `sudo vim /usr/share/X11/xkb/rules/evdev.xml` with the following, add it inside the `<layoutList>` tag.
 
 ```
 <layout>
@@ -22,3 +22,5 @@ Then you have to update the `sudo vim /usr/share/X11/xkb/rules/evdev.xml` with t
 </layout>
 
 ```
+
+After that you have to restart your computer. The layout should be available in the keyboard settings. `Settings > Keyboard > Input Sources > + > English (Real Programmers Dvorak)`
